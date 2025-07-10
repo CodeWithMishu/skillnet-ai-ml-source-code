@@ -1,1 +1,1 @@
-# make a calculator without using if else statement 
+# make a calculator without using if else statement with basicc things
