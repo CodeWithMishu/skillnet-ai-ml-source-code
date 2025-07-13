@@ -1,28 +1,19 @@
-#take user input and print this is the type and also print the input 
+# Take user input and print the type and input
 value = input("Enter any value: ")
 
-# Try to detect the type
-if value.lower() == "true":
-    converted_value = True
-    detected_type = type(converted_value)
-elif value.lower() == "false":
-    converted_value = False
-    detected_type = type(converted_value)
+# Check what type of input it is
+if value.lower() == "true" or value.lower() == "false":
+    print(f"You entered: {value}")
+    print("Type of input: <class 'bool'>")
+elif value.isdigit():
+    print(f"You entered: {value}")
+    print("Type of input: <class 'int'>")
+elif value.count('.') == 1 and value.replace('.', '').isdigit():
+    print(f"You entered: {value}")
+    print("Type of input: <class 'float'>")
+elif 'j' in value.lower():
+    print(f"You entered: {value}")
+    print("Type of input: <class 'complex'>")
 else:
-    try:
-        converted_value = int(value)
-        detected_type = type(converted_value)
-    except ValueError:
-        try:
-            converted_value = float(value)
-            detected_type = type(converted_value)
-        except ValueError:
-            try:
-                converted_value = complex(value)
-                detected_type = type(converted_value)
-            except ValueError:
-                converted_value = value
-                detected_type = type(value)
-
-print(f"You entered: {converted_value}")
-print(f"Type of input: {detected_type}")
+    print(f"You entered: {value}")
+    print("Type of input: <class 'str'>")
