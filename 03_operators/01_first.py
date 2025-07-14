@@ -64,3 +64,5 @@ student_2 = {
 a =student.get("age")
 b =student_2.get("age")
 print(a+b)
+
+# 10 students dictionary - name , age , roll number print seperately 
