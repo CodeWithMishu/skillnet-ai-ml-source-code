@@ -1,111 +1,54 @@
-# 10 students dictionary - name , age , roll number print seperately 
-stud_1 = {
-    "name": "Munish",
-    "age": 19,
-    "roll number": "101"
+# Single student data dictionary with all 10 students using lists
+student_data = {
+    "name": [
+        "Munish", "Sahil", "Abhisek", "Vishal", "Aditya", 
+        "Mandeep", "Akshay", "Saurav", "Mohit", "Rohan"
+    ],
+    "age": [
+        19, 18, 20, 19, 21, 
+        18, 20, 19, 22, 18
+    ],
+    "roll_number": [
+        101, 102, 103, 104, 105, 
+        106, 107, 108, 109, 110
+    ]
 }
 
-stud_2 = {
-    "name": "Sahil",
-    "age": 18,
-    "roll number": "102"
-}
+# Using get() function to access data
+names = student_data.get("name")[0], student_data.get("age")[0], student_data.get("roll_number")[0]
+print(names)
+# print(ages)
 
-stud_3 = {
-    "name": "Abhisek",
-    "age": 20,
-    "roll number": "103"
-}
 
-stud_4 = {
-    "name": "Vishal",
-    "age": 19,
-    "roll number": "104"
-}
 
-stud_5 = {
-    "name": "Aditya",
-    "age": 21,
-    "roll number": "105"
-}
 
-stud_6 = {
-    "name": "Mandeep",
-    "age": 18,
-    "roll number": "106"
-}
+# ages = student_data.get("age")
+# roll_numbers = student_data.get("roll_number")
 
-stud_7 = {
-    "name": "Akshay",
-    "age": 20,
-    "roll number": "107"
-}
 
-stud_8 = {
-    "name": "Saurav",
-    "age": 19,
-    "roll number": "108"
-}
+# print("All Student Data using get() function:")
+# print(f"Names: {names}")
+# print(f"Ages: {ages}")
+# print(f"Roll Numbers: {roll_numbers}\n")
 
-stud_9 = {
-    "name": "Mohit",
-    "age": 22,
-    "roll number": "109"
-}
+# # Access individual student data using get() and indexing
+# print("Individual Student Information using get():")
+# for i in range(10):
+#     name = student_data.get("name")[i]
+#     age = student_data.get("age")[i]
+#     roll = student_data.get("roll_number")[i]
+    
+#     print(f"Student {i+1}:")
+#     print(f"  Name: {name}")
+#     print(f"  Age: {age}")
+#     print(f"  Roll Number: {roll}\n")
 
-stud_10 = {
-    "name": "Vishal",
-    "age": 18,
-    "roll number": "110"
-}
+# # Examples of accessing specific data using get()
+# print("Examples of accessing specific data using get():")
+# print(f"First student name: {student_data.get('name')[0]}")
+# print(f"Last student age: {student_data.get('age')[9]}")
+# print(f"Third student roll number: {student_data.get('roll_number')[2]}")
 
-# Print each student's information separately
-print("Student 1:")
-print(f"Name: {stud_1['name']}")
-print(f"Age: {stud_1['age']}")
-print(f"Roll Number: {stud_1['roll number']}\n")
+# # Using get() with default values for safety
+# print(f"\nSafe access with default: {student_data.get('grade', 'Not Available')}")
 
-print("Student 2:")
-print(f"Name: {stud_2['name']}")
-print(f"Age: {stud_2['age']}")
-print(f"Roll Number: {stud_2['roll number']}\n")
-
-print("Student 3:")
-print(f"Name: {stud_3['name']}")
-print(f"Age: {stud_3['age']}")
-print(f"Roll Number: {stud_3['roll number']}\n")
-
-print("Student 4:")
-print(f"Name: {stud_4['name']}")
-print(f"Age: {stud_4['age']}")
-print(f"Roll Number: {stud_4['roll number']}\n")
-
-print("Student 5:")
-print(f"Name: {stud_5['name']}")
-print(f"Age: {stud_5['age']}")
-print(f"Roll Number: {stud_5['roll number']}\n")
-
-print("Student 6:")
-print(f"Name: {stud_6['name']}")
-print(f"Age: {stud_6['age']}")
-print(f"Roll Number: {stud_6['roll number']}\n")
-
-print("Student 7:")
-print(f"Name: {stud_7['name']}")
-print(f"Age: {stud_7['age']}")
-print(f"Roll Number: {stud_7['roll number']}\n")
-
-print("Student 8:")
-print(f"Name: {stud_8['name']}")
-print(f"Age: {stud_8['age']}")
-print(f"Roll Number: {stud_8['roll number']}\n")
-
-print("Student 9:")
-print(f"Name: {stud_9['name']}")
-print(f"Age: {stud_9['age']}")
-print(f"Roll Number: {stud_9['roll number']}\n")
-
-print("Student 10:")
-print(f"Name: {stud_10['name']}")
-print(f"Age: {stud_10['age']}")
-print(f"Roll Number: {stud_10['roll number']}\n")
