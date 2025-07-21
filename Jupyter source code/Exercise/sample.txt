@@ -1,0 +1,5 @@
+Line 1: Hello World
+Line 2: Python Programming
+Line 3: Generator Functions
+Line 4: File Processing
+Line 5: End of file
