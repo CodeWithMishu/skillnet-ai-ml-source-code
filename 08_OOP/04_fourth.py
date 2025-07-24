@@ -76,3 +76,26 @@
 
 # c = Car("Mercdes","Benz S-class")
 # c.start()
+
+# class person:
+#     def __init__(self,name,age):
+#         self.age = age
+#         self.name = name
+#     def get_age(self):
+#         return self.__age
+#     def set_age(self,age):
+#         if age>0:
+#             self.__age = age
+#         else:
+#             print("invalid age")
+
+# p = person("Munish",19)
+# print(p.name)
+# print(p.age)
+
+# p.set_age(25)
+# print(p.name)
+# print(p.get_age())
+
+# p.__age = 5
+# print(p.get_age)
