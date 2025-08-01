@@ -33,3 +33,9 @@ data = {
     'Score': [85, 90, 95, 80]
 }
 
+df['age']=df['age']+1 # Increment in age value by one
+
+var=int(input("enter the value"))
+variables = var+5*4
+
+df['age']=df['age']+variable
