@@ -26,16 +26,56 @@ data = {
 #df.info()  # Get a concise summary of the DataFrame (datatypes, non-null counts, etc., null values)
 # df.describe()  # Get a statistical summary of the DataFrame
 
+# data = {
+    # 'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    # 'Age': [25, 30, 35, 40],
+    # 'City': ['New York', 'Los Angeles', 'Chicago', 'Houston'],
+    # 'Score': [85, 90, 95, 80]
+# }
+# 
+# df = pd.DataFrame(data)
+# df['Age'] = df['Age'] + 1  # Increment in age value by one
+# 
+# var=int(input("enter the value"))
+# variables = var+5*4
+# 
+# df['age']=df['age']+variable
+# data ={
+    # 'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    # 'Age': [25, 30, 35, 40],
+    # 'City': ['New York', 'Los Angeles', 'Chicago', 'Houston'],
+    # 'Score': [85, 90, 95, 80]
+# }
+# 
+# df=pd.DataFrame(data)
+# print(df)
+# df=pd.read_csv('data.csv')
+# df.to_csv('output.csv',index=True)
+# 
+
+# df.drop('city',axis=1,inplace=True)
+
+# data = {'Name': ['Alice', 'Bob', 'None'],
+        # 'Age': [25, None,30]}
+# df = pd.DataFrame(data)
+# df['Name']= df['Name'].replace('None','Tushar')  
+# df['Name']= df['Name'].fillna('Tushar')  # Fill NaN values with 'Tushar'
+# print(df)
+
+
+import pandas as pd
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Age': [25, 30, 35, 40],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston'],
-    'Score': [85, 90, 95, 80]
+    'Name': ['Munish', 'Shivani', 'shweta', 'praful','jatin'],
+    'City': ['Bilaspur', 'hamirpur', 'kangra', 'shimla', 'bilaspur'],
+    'Age': [25, 30, 35, 40, 28]
 }
 
-df['age']=df['age']+1 # Increment in age value by one
+df=pd.DataFrame(data)
+# print(df)
+# avg_age= df.groupby('City')['Age'].mean().loc['kangra']
+# print(avg_age)
 
-var=int(input("enter the value"))
-variables = var+5*4
+# df.sort_values(by='Age', ascending=False, inplace=True)  # Sort by 'Age' in descending order
+# print(df)
+# pd.merge(df1,df2 on ='ID')
 
-df['age']=df['age']+variable
